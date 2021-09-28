@@ -8,13 +8,12 @@ body {
     height: 100vh;
     background-color: rgb(206, 206, 206);
     background-image: url("baby.png");
-    background-repeat: no-repeat;
     background-size:40%;
-    background-position: center;
 }
 
 /*setting the look of the main container to make it look like an old console*/
 .container {
+    margin-top: 220px;
     width: 500px;
     max-width: 90%;
     background-color: black;
@@ -27,6 +26,11 @@ body {
     font: 1.3rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     box-shadow: 0 0 10px 2px;
+    text-align: center;
+}
+
+#text {
+    margin: 0px 0px 20px 0px;
 }
 
 /*button styling*/
@@ -49,7 +53,5 @@ body {
     
 }
 
-.btn:hover{
-    border-color: white;
-}
+
 
