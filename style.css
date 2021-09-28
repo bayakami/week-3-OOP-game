@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(206, 206, 206);
+    background-image: url("baby.png");
+    background-repeat: no-repeat;
+    background-size:40%;
+    background-position: center;
+}
+
+/*setting the look of the main container to make it look like an old console*/
+.container {
+    width: 500px;
+    max-width: 90%;
+    background-color: black;
+    background-image: radial-gradient(
+    rgba(0, 150, 0, 0.75), black 120%
+    );
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    box-shadow: 0 0 10px 2px;
+}
+
+/*button styling*/
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.btn {
+    background-color: transparent;
+    border:none;
+    padding:5px 10px;
+    outline:none;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    color:white;
+    
+}
+
+.btn:hover{
+    border-color: white;
+}
+

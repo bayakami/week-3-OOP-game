@@ -1,0 +1,22 @@
+{
+  "name": "week-3-oop-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "nodemon game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayakami/week-3-OOP-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayakami/week-3-OOP-game/issues"
+  },
+  "homepage": "https://github.com/bayakami/week-3-OOP-game#readme",
+  "dependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
