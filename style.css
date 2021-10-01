@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     margin: 0;
@@ -8,21 +9,23 @@ body {
     height: 100vh;
     background-color: rgb(206, 206, 206);
     background-image: url("baby.png");
-    background-size:40%;
+    background-size:38%;
 }
 
 /*setting the look of the main container to make it look like an old console*/
 .container {
     margin-top: 220px;
     width: 500px;
+    min-height: 300px;
+    max-height: auto;
     max-width: 90%;
     background-color: black;
     background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%
+    rgba(46, 46, 46, 0.75), black 120%
     );
     padding: 10px;
     border-radius: 5px;
-    color: white;
+    color: #00ff00;
     font: 1.3rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     box-shadow: 0 0 10px 2px;
@@ -49,7 +52,7 @@ body {
     outline:none;
     font: 1.3rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
-    color:white;
+    color:#00ff00;
     
 }
 

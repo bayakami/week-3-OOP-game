@@ -55,7 +55,7 @@ options have parameters - text, nextText and sometimes the state is set*/
 const textNodes = [
     {
         id: 1,
-        text: 'You wake up in the kitchen with the worst hangover ever. Your only mission is to get some painkillers and take a nap in your bedroom. BUT beware the baby is still asleep...',
+        text: 'You wake up in the lounge with the worst hangover ever. Your only mission is to get some painkillers and take a nap in your bedroom. BUT beware the baby is still asleep...',
         options: [
             {
                 text: '> North',
@@ -72,7 +72,8 @@ const textNodes = [
             {
                 text: '> West',
                 nextText: 5
-            }
+            },
+            
         ]
     },
     {
@@ -94,12 +95,17 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'Welcome to the lounge. Nothing to see here.',
+        text: 'Welcome to the kitchen. You see a full milk bottle on the floor',
         options: [
             {
                 text: '> North',
                 nextText: 1
             },
+            {
+                text: '> Pick up the bottle',
+                setState: { bottle: true},
+                nextText: 7
+            }
 
         ]
     },
@@ -131,6 +137,7 @@ const textNodes = [
         ]
     },
     {
+        /*WIN*/
         id: 6,
         text: 'You can take a nap. You did it!',
         options: [
@@ -140,6 +147,19 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: 7,
+        text: 'You are in the kitchen. You are holding the milk bottle',
+        options: [
+            {
+                text: '> North',
+                nextText: 1
+            }
+            
+        ]
+    }
+    /*requiredState: (currentState) => currentState.blueGoo,
+        setState: { blueGoo: false, shield: true },*/
 
 ]
 
